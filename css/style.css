@@ -86,6 +86,7 @@ blockquote	{
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 400;
+	/* добавить font-family */
 }
 .btn.btn-default {
 	background-color: #e5e5e5;
@@ -171,6 +172,7 @@ blockquote	{
 	background-position: center bottom;
 	background-size: cover;
 	text-align: center;
+	padding-top: 73px;
 }
 .inner::before {
 	content: "";
