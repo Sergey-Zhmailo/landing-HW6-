@@ -2,6 +2,9 @@
 * {
 	box-sizing: border-box;
 }
+*:focus {
+	outline: none;
+}
 body {
 	margin: 0;
 	background-color: #fff;
@@ -86,7 +89,8 @@ blockquote	{
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 400;
-	/* добавить font-family */
+	letter-spacing: 0.2em;
+	font-family: 'Open Sans', sans-serif;
 }
 .btn.btn-default {
 	background-color: #e5e5e5;
@@ -225,6 +229,9 @@ blockquote span,
 /* ===== DEFAULT COMPONRNTS END ===== */
 
 /* ========== ABOUT STUDIO START ========== */
+.about-studio {
+	border-bottom: 1px solid rgba(236, 236, 236, .08);
+}
 .team-wrapper {
 	padding-top: 100px;
 }
@@ -232,6 +239,7 @@ blockquote span,
 	position: relative;
 }
 .team-item .team-item-img img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 	filter: grayscale(100%);
 }
 .team-item .team-item-skills {
@@ -319,16 +327,102 @@ blockquote span,
 	font-size: 12px;
 }
 /* ========== ABOUT STUDIO END ========== */
-/* ========== Why Choose Us? START ========== */
-.why-choose-us-item {
 
+/* ========== SERVICES START ========== */
+#tabs .tabs-nav {
+	overflow: hidden;
 }
+#tabs .tabs-nav li {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+#tabs .tabs-nav li span {
+	display: block;
+}
+#tabs .tabs-nav .icon {
+	font-size: 48px;
+	color: rgba(17, 17, 17, .5);
+	margin-bottom: 35px;
+}
+#tabs .tabs-nav .tabs-title {
+	font-family: 'Dosis', sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	color: rgba(17, 17, 17, .5);
+	margin-bottom: 78px;
+}
+#tabs .ui-state-active .icon {
+	color: #111111;
+}
+#tabs .ui-state-active .tabs-title {
+	color: #111111;
+}
+/* ========== SERVICES END ========== */
+
+/* ========== LETS TALK START ========== */
+
+/* ========== LETS TALK END ========== */
+
+/* ========== PORTFOLIO START ========== */
+.portfolio {
+	padding-top: 135px;
+}
+.portfolio .portfolio-tabs-section {
+	padding-top: 85px;
+}
+.portfolio .portfolio-tabs-section::after {
+	content: "";
+	display: block;
+	width: 100%;
+	clear: both;
+}
+.portfolio .portfolio-title-text {
+	max-width: 750px;
+	margin: auto;
+}
+.portfolio .portfolio-item {
+	float: left;
+	width: 33.33333333%;
+	padding: 4px;
+}
+#portfolio-tabs .portfolio-tabs-nav {
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#portfolio-tabs .portfolio-tabs-nav li {
+	display: inline-block;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	color: rgba(17, 17, 17, .5);
+	margin-left: 17px;
+	margin-right: 17px;
+}
+#portfolio-tabs .portfolio-tabs-nav .ui-state-active {
+	color: #111111;
+}
+#portfolio-tabs .portfolio-item img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+#portfolio-tabs .portfolio-item img:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+}
+/* ========== PORTFOLIO END ========== */
+
+/* ========== Why Choose Us? START ========== */
 .why-choose-us-item .why-choose-us-item-img {
 	padding-bottom: 35px;
 }
 .why-choose-us-item .why-choose-us-item-img span {
 	font-size: 48px;
-	letter-spacing: 0.5em;
+	/* letter-spacing: 0.5em;  в макете указан */
 	color: #111;
 }
 .why-choose-us-item .why-choose-us-item-heading {
@@ -341,6 +435,77 @@ blockquote span,
 	color: #111;
 	margin-bottom: 35px;
 }
+.why-choose-us-item .why-choose-us-text {
+	font-size: 14px;
+	line-height: 1.857;
+}
+.why-choose-us .row + .row {
+	margin-top: 85px;
+}
 /* ========== Why Choose Us? END ========== */
+
+/* ========== LATEST NEWS START ========== */
+.latest-news .blog-link {
+	font-size: 11px;
+	color: #999999;
+	letter-spacing: 0.4em;
+	display: inline-block;
+	float: right;
+}
+.latest-news .blog-link:hover {
+	color: #111111;
+}
+.latest-news .post-img {
+	margin-bottom: 30px;
+}
+.latest-news .post-img img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+.latest-news .post-img img:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+}
+.latest-news .post-title {
+	display: block;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #777777;
+	margin-bottom: 17px;
+}
+.latest-news .post-autor {
+	display: inline-block;
+	font-family: 'Dosis', sans-serif;
+	font-size: 11px;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	color: #999999;
+}
+.latest-news .post-autor::after {
+	content: "|";
+	margin: 0px 10px 0px 6px;
+}
+.latest-news .post-date {
+	display: inline-block;
+	font-family: 'Dosis', sans-serif;
+	font-size: 11px;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	color: #999999;
+}
+.latest-news .post-text {
+	margin-top: 25px;
+}
+.latest-news .post-read-more {
+	margin-top: 25px;
+}
+.latest-news .post-read-more a::after {
+	content: ">";
+	margin-left: 5px;
+}
+/* ========== LATEST NEWS END ========== */
 
 
