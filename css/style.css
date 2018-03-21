@@ -36,15 +36,32 @@ ul, ol {
 img {
 	max-width: 100%;
 }
+input,
+textarea,
 button {
 	outline: none;
 	border: none;
+}
+textarea {
+	resize: vertical;
+}
+input[type="submit"] {
+	cursor: pointer;
+}
+button {
 	cursor: pointer;
 }
 blockquote	{
 	margin: 0px;
 }
 /* ===== RESET END ===== */
+
+/* ===== GUIDE STYLES START ===== */
+.guide-section form .form-control {
+	margin-bottom: 10px;
+}
+/* ===== GUIDE STYLES END ===== */
+
 /* ===== DEFAULT CLASSES START ====== */
 .text-center {
 	text-align: center;
@@ -92,6 +109,10 @@ blockquote	{
 	letter-spacing: 0.2em;
 	font-family: 'Open Sans', sans-serif;
 }
+.btn[disabled] {
+	cursor: not-allowed;
+	opacity: .6;
+}
 .btn.btn-default {
 	background-color: #e5e5e5;
 	color: #777;
@@ -111,6 +132,38 @@ blockquote	{
 	font-size: 11px;
 }
 /* BUTTONS END */
+
+/* FORM START */
+.form-control {
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 36px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #777777;
+	padding-left: 13px;
+	padding-right: 13px;
+}
+.form-control:focus {
+	border-color: #111;
+}
+textarea.form-control {
+	min-height: 82px;
+}
+.form-control[disabled],
+.form-control.disabled {
+	cursor: not-allowed;
+	opacity: .6;
+}
+.form-control.error {
+	border-color: rgb(252, 70, 70);
+}
+/* FORM END */
+
 /* TEXT, TITLE START */
 .title {
 	font-family: 'Dosis', sans-serif;
@@ -138,6 +191,14 @@ blockquote	{
 	font-weight: 300;
 }
 /* TEXT, TITLE END */
+.form-info {
+	font-size: 11px;
+	font-weight: 400;
+	color: #aaaaaa;
+}
+.form-info .fa {
+	font-size: 12px;
+}
 /* HEADER START */
 .header {
 	background-color: transparent;
@@ -207,8 +268,6 @@ blockquote	{
 /* INNER END */
 /* FOOTER START */
 /* FOOTER END */
-/* FORM START */
-/* FORM END */
 /* ICONS START */
 /* ICONS ENS */
 /* TABS START */
@@ -362,7 +421,21 @@ blockquote span,
 /* ========== SERVICES END ========== */
 
 /* ========== LETS TALK START ========== */
-
+.lets-talk .lets-talk-left-text {
+	padding: 140px 0;
+}
+.lets-talk .lets-talk-left-text p {
+	color: rgba(255, 255, 255, .7);
+	margin-bottom: 35px;
+}
+.lets-talk .lets-talk-left-text .btn {
+	padding: 14px 40px;
+	font-size: 14px;
+	color: #111111;
+}
+.lets-talk .lets-talk-img {
+	margin-top: -32px;
+}
 /* ========== LETS TALK END ========== */
 
 /* ========== PORTFOLIO START ========== */
@@ -415,6 +488,20 @@ blockquote span,
 	filter: grayscale(0%);
 }
 /* ========== PORTFOLIO END ========== */
+
+/* ========== Like Our Creative Works? START ========== */
+.like-our-creative-works {
+	padding: 70px 0;
+}
+.like-our-creative-works .title {
+	margin-bottom: 25px;
+}
+.like-our-creative-works .btn {
+	padding: 14px 40px;
+	font-size: 14px;
+	color: #111111;
+}
+/* ========== Like Our Creative Works? START ========== */
 
 /* ========== Why Choose Us? START ========== */
 .why-choose-us-item .why-choose-us-item-img {
@@ -508,4 +595,14 @@ blockquote span,
 }
 /* ========== LATEST NEWS END ========== */
 
-
+/* ========== SUBSCRIBE START ========== */
+.subscribe form .form-control {
+	max-width: 293px;
+}
+/* ========== SUBSCRIBE END ========== */
+.subscribe .title {
+	font-size: 16px;
+}
+.subscribe .form-info {
+	margin-top: 20px;
+}
