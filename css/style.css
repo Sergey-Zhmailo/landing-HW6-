@@ -41,6 +41,7 @@ textarea,
 button {
 	outline: none;
 	border: none;
+	padding: 0;
 }
 textarea {
 	resize: vertical;
@@ -60,6 +61,9 @@ blockquote	{
 .guide-section form .form-control {
 	margin-bottom: 10px;
 }
+.grid-icons .romb-icon {
+	margin: 0 15px;
+}
 /* ===== GUIDE STYLES END ===== */
 
 /* ===== DEFAULT CLASSES START ====== */
@@ -77,6 +81,11 @@ blockquote	{
 }
 .bg-gray {
 	background-color: #f8f8f8;
+}
+.m-auto {
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
 }
 /* ===== DEFAULT CLASSES END ===== */
 /* ===== DEFAULT COMPONRNTS START ===== */
@@ -163,6 +172,35 @@ textarea.form-control {
 	border-color: rgb(252, 70, 70);
 }
 /* FORM END */
+
+/* ROMB ICONS START */
+.romb-icon {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+	border-radius: 2px;
+	font-size: 14px;
+	transform: rotate(45deg);
+}
+.romb-icon i {
+	transform: rotate(-45deg);
+}
+.romb-icon.black-icon {
+	color: #f8f8f8;
+	background-color: #111;
+}
+.romb-icon.transparent-icon {
+	color: #111111;
+	border: 1px solid rgba(0, 0, 0, .9);
+	background-color: transparent;
+}
+.romb-icon.white-icon {
+	color: #111111;
+	background-color: #fff;
+}
+/* ROMB ICONS END */
 
 /* TEXT, TITLE START */
 .title {
@@ -289,7 +327,7 @@ blockquote span,
 
 /* ========== ABOUT STUDIO START ========== */
 .about-studio {
-	border-bottom: 1px solid rgba(236, 236, 236, .08);
+	border-bottom: 1px solid rgba(19, 19, 19, .08);
 }
 .team-wrapper {
 	padding-top: 100px;
@@ -390,6 +428,7 @@ blockquote span,
 /* ========== SERVICES START ========== */
 #tabs .tabs-nav {
 	overflow: hidden;
+	margin-bottom: 78px;
 }
 #tabs .tabs-nav li {
 	float: left;
@@ -410,7 +449,6 @@ blockquote span,
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
 	color: rgba(17, 17, 17, .5);
-	margin-bottom: 78px;
 }
 #tabs .ui-state-active .icon {
 	color: #111111;
@@ -490,17 +528,14 @@ blockquote span,
 /* ========== PORTFOLIO END ========== */
 
 /* ========== Like Our Creative Works? START ========== */
-.like-our-creative-works {
-	padding: 70px 0;
-}
 .like-our-creative-works .title {
 	margin-bottom: 25px;
 }
-.like-our-creative-works .btn {
+/* .like-our-creative-works .btn {
 	padding: 14px 40px;
 	font-size: 14px;
 	color: #111111;
-}
+} */
 /* ========== Like Our Creative Works? START ========== */
 
 /* ========== Why Choose Us? START ========== */
@@ -530,6 +565,106 @@ blockquote span,
 	margin-top: 85px;
 }
 /* ========== Why Choose Us? END ========== */
+
+/* ========== REVIEWS START ========== */
+.reviews-carousel {
+	padding: 135px 0;
+	overflow: hidden;
+}
+.reviews-carousel .slide-content {
+	max-width: 750px;
+	margin: 0 auto;
+}
+.reviews-carousel .icon-quote {
+	font-size: 32px;
+	font-weight: 400;
+	color: #ffffff;
+	margin-bottom: 22px;
+}
+.reviews-carousel p {
+	font-size: 18px;
+	line-height: 1.667;
+	color: rgba(255, 255, 255, .75);
+}
+.reviews-carousel .review-author {
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 3.45;
+	letter-spacing: 0.2em;
+	color: rgba(255, 255, 255, .3);
+	text-transform: uppercase;
+}
+.reviews-carousel .title {
+	margin-bottom: 40px;
+}
+.reviews .slick-dots {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 30px;
+}
+.reviews .slick-dots li {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-color: rgba(255, 255, 255, .8);
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.reviews .slick-dots li button {
+	display: none;
+}
+.reviews .slick-dots li + li {
+	margin-left: 5px;
+}
+.reviews .slick-dots li.slick-active {
+	background-color: #000000;
+	border-color: rgba(255, 255, 255, .8);
+}
+.reviews .slick-arrow {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	width: 90px;
+	z-index: 1;
+	cursor: pointer;
+}
+.reviews .slick-arrow.slick-prev {
+	left: 0;
+}
+.reviews .slick-arrow.slick-next {
+	right: 0;
+}
+.reviews .carousel-button {	
+    width: 63px;
+    height: 63px;
+    background-color: #fff;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    margin: -31px 0 0 -31px;
+    z-index: 2;
+}
+.reviews .carousel-button i {
+	transform: rotate(-45deg);
+	position: absolute;
+	font-size: 10px;
+}
+.reviews .slick-arrow.slick-prev i {
+    top: 13px;
+	right: 13px;
+}
+.reviews .slick-arrow.slick-next .carousel-button {
+	right: 0px;
+    margin-right: -31px;
+}
+.reviews .slick-arrow.slick-next i {
+    bottom: 13px;
+    left: 16px;
+}
+/* ========== REVIEWS ENDF ========== */
 
 /* ========== LATEST NEWS START ========== */
 .latest-news .blog-link {
@@ -563,19 +698,7 @@ blockquote span,
 	color: #777777;
 	margin-bottom: 17px;
 }
-.latest-news .post-autor {
-	display: inline-block;
-	font-family: 'Dosis', sans-serif;
-	font-size: 11px;
-	letter-spacing: 0.4em;
-	text-transform: uppercase;
-	color: #999999;
-}
-.latest-news .post-autor::after {
-	content: "|";
-	margin: 0px 10px 0px 6px;
-}
-.latest-news .post-date {
+.latest-news .post-autor-date {
 	display: inline-block;
 	font-family: 'Dosis', sans-serif;
 	font-size: 11px;
@@ -599,10 +722,65 @@ blockquote span,
 .subscribe form .form-control {
 	max-width: 293px;
 }
-/* ========== SUBSCRIBE END ========== */
 .subscribe .title {
 	font-size: 16px;
 }
 .subscribe .form-info {
 	margin-top: 20px;
 }
+/* ========== SUBSCRIBE END ========== */
+
+/* ========== CONTACTS START =========== */
+.contact-item .contact-item-content {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+.contact-item .contact-item-content span {
+	display: block;
+}
+.contact-item .contact-item-title {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.contact-item .contact-item-text {
+	color: #444444;
+}
+/* ========== CONTACTS END ========== */
+
+/* ========== FOOTER START ========== */
+.footer .footer-content-img {
+	margin-bottom: 25px;
+}
+.footer .footer-content-social-links {
+	margin-bottom: 110px;
+}
+.footer .footer-content-social-links li {
+	display: inline-block;
+	margin: 0 8px;
+}
+.footer .footer-content-social-links a:hover {
+	color: #f8f8f8;
+	background-color: #111;
+}
+.footer .footer-content-copyright span {
+	display: block;
+}
+.footer .copyright-title {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: .5em;
+	text-transform: uppercase;
+	color: #111111;
+	margin-bottom: 15px;
+}
+.footer .copyright-text {
+	font-family: 'Open Sans', sans-serif;
+	color: #999999;
+}
+/* ========== FOOTER END ========== */
