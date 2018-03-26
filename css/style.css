@@ -753,6 +753,10 @@ blockquote span,
 /* ========== CONTACTS END ========== */
 
 /* ========== FOOTER START ========== */
+.footer-content {
+	padding-top: 140;
+	padding-bottom: 60px;
+}
 .footer .footer-content-img {
 	margin-bottom: 25px;
 }
