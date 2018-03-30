@@ -30,19 +30,19 @@
         <!-- /logo -->
         <ul class="header-nav">
           <li>
-            <a href="#">Home</a>
+            <a href="#" data-scroll-to=".inner">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#" data-scroll-to=".about-studio">About</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="#" data-scroll-to=".services">Services</a>
           </li>
           <li>
-            <a href="#">Works</a>
+            <a href="#" data-scroll-to=".portfolio">Works</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#" data-scroll-to=".contacts">Contact</a>
           </li>
         </ul>
         <!-- /header-nav -->
@@ -90,7 +90,7 @@
           <div class="team-wrapper">
             <div class="row">
               <div class="col col-4">
-                <div class="team-item">
+                <div class="team-item thomas-rhythm">
                   <div class="team-item-img">
                     <img src="img/thomas-rhythm.jpg" alt="Thomas Rhythm">
                     <div class="team-item-skills">
@@ -126,6 +126,7 @@
                         </div>
                         <!-- /skills-bars-section -->
                       </div>
+                      <!-- / team-item-skills-content -->
                     </div>
                     <!-- /team-item-skills -->
                   </div>
@@ -138,11 +139,47 @@
                 </div>
                 <!-- /team-item -->
               </div>
-              <!-- /col -->
+              <!-- / col Thomas Rhythm -->
               <div class="col col-4">
-                <div class="team-item">
+                <div class="team-item marta-laning">
                   <div class="team-item-img">
                     <img src="img/marta-laning.jpg" alt="Marta Laning">
+                    <div class="team-item-skills">
+                      <div class="team-item-skills-content">
+                        <span class="skills-heading">Skills</span>
+                        <span class="skills-text">Curabitur iaculis accumsan augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta.</span>
+                        <div class="progress-bars-section">
+                          <!-- Branding -->
+                          <span class="progress-bar-heading">Branding</span>
+                          <div class="skills-progress-bar">
+                            <div class="progress-bar-value branding"></div>
+                          </div>
+                          <!-- / Branding-->
+                          <!-- Design -->
+                          <span class="progress-bar-heading">Design</span>
+                          <div class="skills-progress-bar">
+                            <div class="progress-bar-value design"></div>
+                          </div>
+                          <!-- / Design -->
+                          <!-- Development -->
+                          <span class="progress-bar-heading">Development</span>
+                          <div class="skills-progress-bar">
+                            <div class="progress-bar-value development"></div>
+                          </div>
+                          <!-- / Development -->
+                          <!-- Photography -->
+                          <span class="progress-bar-heading">Photography</span>
+                          <div class="skills-progress-bar">
+                            <div class="progress-bar-value photography"></div>
+                          </div>
+                          <!-- / Photography -->
+                          <!-- /skills-progress-bar -->
+                        </div>
+                        <!-- /skills-bars-section -->
+                      </div>
+                      <!-- / team-item-skills-content -->
+                    </div>
+                    <!-- /team-item-skills -->
                   </div>
                   <!-- /team-item-img -->
                   <div class="team-item-info">
@@ -153,11 +190,47 @@
                 </div>
                 <!-- /team-item -->
               </div>
-              <!-- /col -->
+              <!-- / col Marta Laning -->
               <div class="col col-4">
-                <div class="team-item">
+                <div class="team-item steve-anders">
                   <div class="team-item-img">
                     <img src="img/steve-anders.jpg" alt="Steve Anders">
+                    <div class="team-item-skills">
+                      <div class="team-item-skills-content">
+                        <span class="skills-heading">Skills</span>
+                        <span class="skills-text">Curabitur iaculis accumsan augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta.</span>
+                        <div class="progress-bars-section">
+                          <!-- Branding -->
+                          <span class="progress-bar-heading">Branding</span>
+                          <div class="skills-progress-bar">
+                            <div class="progress-bar-value branding"></div>
+                          </div>
+                          <!-- / Branding-->
+                          <!-- Design -->
+                          <span class="progress-bar-heading">Design</span>
+                          <div class="skills-progress-bar">
+                            <div class="progress-bar-value design"></div>
+                          </div>
+                          <!-- / Design -->
+                          <!-- Development -->
+                          <span class="progress-bar-heading">Development</span>
+                          <div class="skills-progress-bar">
+                            <div class="progress-bar-value development"></div>
+                          </div>
+                          <!-- / Development -->
+                          <!-- Photography -->
+                          <span class="progress-bar-heading">Photography</span>
+                          <div class="skills-progress-bar">
+                            <div class="progress-bar-value photography"></div>
+                          </div>
+                          <!-- / Photography -->
+                          <!-- /skills-progress-bar -->
+                        </div>
+                        <!-- /skills-bars-section -->
+                      </div>
+                      <!-- / team-item-skills-content -->
+                    </div>
+                    <!-- /team-item-skills -->
                   </div>
                   <!-- /team-item-img -->
                   <div class="team-item-info">
@@ -168,7 +241,7 @@
                 </div>
                 <!-- /team-item -->
               </div>
-              <!-- /col -->
+              <!-- / col Steve Anders -->
             </div>
             <!-- /row -->
           </div>
@@ -805,7 +878,20 @@
               </div>
               <!-- / contacts-items-wrapper -->
               <form class="contact-form">
-
+                <div class="form-col">
+                  <input type="text" name="user-name" id="user-name" class="form-control" placeholder="NAME">
+                  <input type="text" name="user-email" id="user-email" class="form-control" placeholder="EMAIL">
+                </div>
+                <!-- / form-col -->
+                <div class="form-col">
+                  <textarea name="user-message" id="user-message" class="form-control" placeholder="MESSAGE"></textarea>
+                </div>
+                <!-- / form-col -->
+                <div class="form-info pull-left">
+                  <span><i class="fa fa-info-circle" aria-hidden="true"></i> All the fields are required</span>
+                </div>
+                <!-- / form-info -->
+                <button type="submit" class="btn btn-black pull-right">Submit Message</button>
               </form>
               <!-- / contact-form -->
             </div>
@@ -817,63 +903,88 @@
       </div>
       <!-- / CONTACTS -->
       <!-- MAP -->
+      <div class="map-container">
+        <div id="map"></div>
+        <div class="on-map-block text-center">
+          <div class="on-map-content">
+            <div class="romb-icon white-icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="on-map-text">
+              <span>Open the map</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- / on-map-content  -->
+        </div>
+      </div>
       <!-- / MAP -->
     </div>
     <!-- /main -->
     <!-- ===== MAIN END ===== -->
     <!-- ===== FOOTER START ===== -->
-    <div class="footer">
+    <div class="footer bg-gray text-center">
       <div class="container">
-        <div class="footer-content text-center">
-          <div class="footer-content-img">
-            <img src="img/footer-logo.png" alt="footer-logo">
-          </div>
-          <!-- / footer-content-img -->
-          <ul class="footer-content-social-links">
-            <li>
-              <a class="romb-icon transparent-icon" href="#">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a class="romb-icon transparent-icon" href="#">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a class="romb-icon transparent-icon" href="#">
-                <i class="fa fa-behance"></i>
-              </a>
-            </li>
-            <li>
-              <a class="romb-icon transparent-icon" href="#">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a class="romb-icon transparent-icon" href="#">
-                <i class="fa fa-pinterest"></i>
-              </a>
-            </li>
-          </ul>
-          <!-- / footer-content-social-links -->
-          <div class="footer-content-copyright">
-            <span class="copyright-title">© Rhythm 2014</span>
-            <span class="copyright-text">Made with love for great people</span>
-          </div>
-          <!-- / footer-content-copyright -->
+        <div class="footer-content-img">
+          <img src="img/footer-logo.png" alt="footer-logo">
         </div>
-        <!-- / footer-content -->
+        <!-- / footer-content-img -->
+        <ul class="footer-content-social-links">
+          <li>
+            <a class="romb-icon transparent-icon" href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="romb-icon transparent-icon" href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="romb-icon transparent-icon" href="#">
+              <i class="fa fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a class="romb-icon transparent-icon" href="#">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="romb-icon transparent-icon" href="#">
+              <i class="fa fa-pinterest"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- / footer-content-social-links -->
+        <div class="footer-content-copyright">
+          <span class="copyright-title">© Rhythm 2014</span>
+          <span class="copyright-text">Made with love for great people</span>
+        </div>
+        <!-- / footer-content-copyright -->
       </div>
       <!-- / container -->
     </div>
     <!-- ===== FOOTER END ===== -->
+    <!-- ===== ARROW-UP START ===== -->
+    <div class="arrow-up" data-scroll-to=".inner">
+      <i class="fa fa-caret-up" aria-hidden="true"></i>
+    </div>
+    <!-- ===== ARROW-UP END ===== -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <!-- jQuery UI -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- GOOGLE MAP -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ7bV0EopfmG0ZgLsoa6lpP5bv_kJEkzo&callback=initMap"    async defer></script>
+    <!-- Init GOOGLE MAP -->
+    <script src="js/google-maps.js"></script>
     <!-- Plugins -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Show header with scroll -->
+    <script src="js/header-scroll.js"></script>
+    <!-- Scroll to -->
+    <script src="js/scroll-to.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
   </body>
