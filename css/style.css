@@ -99,6 +99,16 @@ blockquote	{
 .default-section {
 	padding: 135px 0;
 }
+@media (max-width: 767px) {
+	.default-section {
+		padding: 100px 0 50px 0;
+	}
+}
+@media (max-width: 576px) {
+	.default-section {
+		padding: 75px 0px 30px 0px;
+	}
+}
 .small-section {
 	padding: 70px 0;
 }
@@ -145,6 +155,11 @@ blockquote	{
 .btn.btn-xs {
 	padding: 7px 15px;
 	font-size: 11px;
+}
+@media (max-width: 576px) {
+	.btn {
+		width: 100%;
+	}
 }
 /* BUTTONS END */
 
@@ -274,6 +289,17 @@ textarea.form-control {
 	border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
 }
+.slicknav_menu {
+	display: none;
+}
+@media (max-width: 767px) {
+	.slicknav_menu {
+		display: block;
+	}
+	.header-nav {
+		display: none;
+	}
+}
 /* HEADER END */
 
 /* INNER START */
@@ -312,13 +338,25 @@ textarea.form-control {
 	font-size: 19px;
 	color: rgba(254, 254, 254, .68);
 }
+@media (max-width: 991px) {
+	.inner-content h1 {
+		letter-spacing: .7em;
+		text-indent: .7em;
+		margin-bottom: 55px;
+	}
+}
+@media (max-width: 767px) {
+	.inner {
+		height: auto;
+		padding: 150px 0;
+	}
+}
+@media (max-width: 576px) {
+	.inner-content h1 {
+		font-size: 19px;
+	}
+}
 /* INNER END */
-/* FOOTER START */
-/* FOOTER END */
-/* ICONS START */
-/* ICONS ENS */
-/* TABS START */
-/* TABS END */
 /* BLOCKQUOTE START */
 blockquote, .blockquote {
 	font-size: 24px;
@@ -331,6 +369,11 @@ blockquote span,
 	text-transform: uppercase;
 	letter-spacing: .2em;
 }
+@media (max-width: 991px) {
+	blockquote {
+		margin-bottom: 30px;
+	}
+}
 /* BLOCKQUOTE END */
 
 /* ARROW-UP START */
@@ -342,6 +385,7 @@ blockquote span,
 	bottom: 30px;
 	cursor: pointer;
 	transition: font-size 0.2s linear;
+	z-index: 3;
 }
 .arrow-up:hover {
 	font-size: 35px;
@@ -398,7 +442,7 @@ blockquote span,
 	display: block;
 }
 .team-item .progress-bars-section {
-	margin-top: 41px;
+	margin-top: 22px;
 }
 .team-item .progress-bar-heading {
 	display: block;
@@ -477,6 +521,59 @@ blockquote span,
 	display: block;
 	font-size: 12px;
 }
+@media (max-width: 991px) {
+	.about-studio .team-item-skills-content {
+		padding: 15px;
+	}
+	.about-studio .skills-heading {
+		margin-bottom: 10px;
+	}
+	.about-studio .progress-bars-section {
+		margin-top: 0;
+	}
+	.about-studio .progress-bar-heading {
+		margin-top: 5px;
+	}
+}
+@media (max-width: 767px) {
+	.about-studio .title.section-title {
+		margin-bottom: 50px;
+	}
+	.about-studio .team-wrapper {
+		padding-top: 50px;
+	}
+	.about-studio .team-wrapper .row .col.col-lg-4.col-sm-12 {
+		margin-bottom: 40px;
+	}
+	.about-studio .row .col.col-4.col-md-6.col-sm-12:nth-last-child(1) {
+		margin-top: 30px;
+	}
+	.about-studio .team-item {
+		max-width: 370px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.about-studio .team-item-skills-content {
+		padding: 40px;
+	}
+	.about-studio .skills-heading {
+		margin-bottom: 26px;
+	}
+	.about-studio .progress-bars-section {
+		margin-top: 41px;
+	}
+	.about-studio .progress-bar-heading {
+		margin-top: 20px;
+	}
+}
+@media (max-width: 576px) {
+	.about-studio.default-section {
+		padding: 75px 0px 30px 0px;
+	}
+	.about-studio .team-item-skills-content {
+		padding: 15px;
+	}
+}
 /* ========== ABOUT STUDIO END ========== */
 
 /* ========== SERVICES START ========== */
@@ -510,6 +607,30 @@ blockquote span,
 #tabs .ui-state-active .tabs-title {
 	color: #111111;
 }
+@media (max-width: 767px) {
+	#tabs .tabs-nav li {
+		width: 33.333%;
+		margin-bottom: 50px;
+	}
+	#tabs .tabs-nav {
+		margin-bottom: 50px;
+	}
+	.services .row .col.col-4.col-md-6.col-sm-12:nth-last-child(1) {
+		margin-top: 30px;
+	}
+}
+@media (max-width: 576px) {
+	.services .title.section-title {
+		margin-bottom: 50px;
+	}
+	#tabs .tabs-nav li {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	#tabs .tabs-nav .icon {
+		margin-bottom: 5px;
+	}
+}
 /* ========== SERVICES END ========== */
 
 /* ========== LETS TALK START ========== */
@@ -527,6 +648,14 @@ blockquote span,
 }
 .lets-talk .lets-talk-img {
 	margin-top: -32px;
+}
+@media (max-width: 991px) {
+	.lets-talk {
+		text-align: center;
+	}
+	.lets-talk .lets-talk-left-text {
+		padding: 50px 0;
+	}
 }
 /* ========== LETS TALK END ========== */
 
@@ -579,6 +708,29 @@ blockquote span,
 	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
 	filter: grayscale(0%);
 }
+@media (max-width: 991px) {
+	.portfolio {
+		padding-top: 100px;
+	}
+	.portfolio .portfolio-item {
+		width: 50%;
+	}
+}
+@media (max-width: 767px) {
+	#portfolio-tabs .portfolio-tabs-nav li {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+		padding: 15px 0;
+	}
+	.portfolio .portfolio-item {
+		width: 100%;
+		max-width: 533px;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+}
 /* ========== PORTFOLIO END ========== */
 
 /* ========== Like Our Creative Works? START ========== */
@@ -617,6 +769,18 @@ blockquote span,
 }
 .why-choose-us .row + .row {
 	margin-top: 85px;
+}
+@media (max-width: 991px) {
+	.why-choose-us .why-choose-us-item-content {
+		text-align: center;
+		margin-bottom: 30px;
+		max-width: 500px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.why-choose-us .row + .row {
+		margin-top: 0;
+	}
 }
 /* ========== Why Choose Us? END ========== */
 
@@ -718,6 +882,13 @@ blockquote span,
     bottom: 13px;
     left: 16px;
 }
+@media (max-width: 991px) {
+	.reviews .reviews-carousel p {
+		max-width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 /* ========== REVIEWS ENDF ========== */
 
 /* ========== LATEST NEWS START ========== */
@@ -770,6 +941,26 @@ blockquote span,
 	content: ">";
 	margin-left: 5px;
 }
+@media (max-width: 991px) {
+	.latest-news .post-img img {
+		width: 100%;
+	}
+	.latest-news .post {
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 576px) {
+	.latest-news .title.section-title {
+		text-align: center;
+	}
+	.latest-news .title.section-title span {
+		display: block;
+		margin-bottom: 20px;
+	}
+	.latest-news .title.section-title a {
+		float: none;
+	}
+}
 /* ========== LATEST NEWS END ========== */
 
 /* ========== SUBSCRIBE START ========== */
@@ -781,6 +972,12 @@ blockquote span,
 }
 .subscribe .form-info {
 	margin-top: 20px;
+}
+@media (max-width: 576px) {
+	.subscribe input[type="email"] {
+		margin-bottom: 20px;
+		max-width: 100%;
+	}
 }
 /* ========== SUBSCRIBE END ========== */
 
@@ -828,6 +1025,48 @@ blockquote span,
 }
 .contact-form .btn {
 	margin-right: 5px;
+}
+@media (max-width: 767px) {
+	.contacts .contact-item {
+		max-width: 210px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+	}
+	.contacts .contacts-items-wrapper {
+		margin-bottom: 30px;
+	}
+	.contacts form {
+		text-align: center;
+	}
+	.contacts .form-col {
+		width: 100%;
+	}
+	.contacts textarea[name="user-message"] {
+		margin-top: 10px;
+	}
+	.contacts .form-info {
+		float: none;
+		margin-left: 0;
+	}
+	.contacts button[type="submit"] {
+		float: none;
+		margin-right: 0;
+	}
+}
+@media (max-width: 576px) {
+	.contacts .contact-item {
+		max-width: none;
+		margin-left: none;
+		margin-right: none;
+		text-align: center;
+	}
+	.contacts .romb-icon {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
 }
 /* ========== CONTACTS END ========== */
 
@@ -919,3 +1158,22 @@ blockquote span,
 	font-weight: 400;
 }
 /* ========== FOOTER END ========== */
+
+/* ========== MEDIA START ========== */
+/* Desktop first */
+/* @media (max-width: 1200px) {
+	
+}
+@media (max-width: 991px) {
+
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 576px) {
+
+}
+@media (max-width: 479px) {
+
+} */
+/* ========== MEDIA END ========== */
