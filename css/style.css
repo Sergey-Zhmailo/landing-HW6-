@@ -1065,18 +1065,14 @@ blockquote span,
 	}
 	.contacts .form-info {
 		float: none;
-		margin-left: 0;
 	}
 	.contacts button[type="submit"] {
 		float: none;
-		margin-right: 0;
 	}
 }
 @media (max-width: 576px) {
 	.contacts .contact-item {
 		max-width: none;
-		margin-left: none;
-		margin-right: none;
 		text-align: center;
 	}
 	.contacts .romb-icon {
