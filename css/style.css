@@ -338,6 +338,25 @@ textarea.form-control {
 	font-size: 19px;
 	color: rgba(254, 254, 254, .68);
 }
+.inner .arrow-down {
+	position: absolute;
+	bottom: 35px;
+	right: 0;
+    width: 100%;
+}
+.inner .arrow-down .romb-icon {
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	color: #222222;
+	transition: all 0.2s linear;
+}
+.inner .arrow-down .romb-icon:hover {
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	color: #111111;
+}
 @media (max-width: 991px) {
 	.inner-content h1 {
 		letter-spacing: .7em;
@@ -1006,6 +1025,9 @@ blockquote span,
 }
 .contact-form {
 	margin: 0 -5px;
+}
+.contact-form .contact-form-row {
+	margin: 0 -5px;
 	overflow: hidden;
 }
 .contact-form .form-col {
@@ -1016,15 +1038,11 @@ blockquote span,
 .contact-form .form-control + .form-control {
 	margin-top: 10px;
 }
-.contact-form .form-col textarea {
-	margin-bottom: 20px;
+.contact-form .submit-form-row {
+	margin-top: 20px;
 }
 .contact-form .form-info {
 	line-height: 41px;
-	margin-left: 5px;
-}
-.contact-form .btn {
-	margin-right: 5px;
 }
 @media (max-width: 767px) {
 	.contacts .contact-item {
@@ -1156,6 +1174,7 @@ blockquote span,
 	font-family: 'Open Sans', sans-serif;
 	color: #999999;
 	font-weight: 400;
+	font-size: 11px;
 }
 /* ========== FOOTER END ========== */
 
